@@ -1,0 +1,15 @@
+<odoo>
+    <data>
+         <template id="student_list_template" name="Student List">
+	     <div id="wrap" class="container">
+	       <h1>Student</h1>
+	         <t t-foreach="students" t-as="student">
+		 <div class="row">
+		  <span t-field="student.name" />,
+		  <span t-field="student.age" />,
+		 </div>
+	         </t>
+	     </div>
+         </template>
+    </data>
+</odoo>

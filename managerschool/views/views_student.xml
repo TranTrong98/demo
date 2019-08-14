@@ -1,0 +1,20 @@
+<odoo>
+  <data>
+
+    <record model="ir.actions.act_window" id="action_view_students">
+      <field name="name">Students</field>
+      <field name="res_model">managerschool.student</field>
+      <field name="view_type">form</field>
+      <field name="view_mode">tree,form</field>
+      <field name="domain">[]</field>
+      <field name="help" type="html">
+         <p class="oe_view_nocontent_create">Create new student
+         </p>
+      </field>
+    </record>
+
+    <menuitem name="School" id="menu_school"/>
+    <menuitem name="Student" id="school_student" parent="menu_school" action="action_view_students"/>
+    
+  </data>
+</odoo>

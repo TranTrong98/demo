@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="manager_list_template" name="Manager List">
+		<div id="wrap" class="container">
+			<h1>Students</h1>
+			<t t-foreach="students" t-as="student">
+			<div class="row">
+			<span t-field="student.name" />,
+			<span t-field="student.age" />,
+			</div>
+			</t>
+		</div>
+	</template>
+</odoo>

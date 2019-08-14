@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<odoo>
+	<!-- Library Manager App Menu -->
+	<menuitem id="manager_menu" name="Manger" />
+
+	<!-- Action to open manager list -->
+	<act_window id="action_manager_student" 
+	name="Manager Student" 
+	res_model="manager.student"
+	view_mode="tree,form"
+	/>
+
+	<!-- Menu item to open manager list -->
+	<menuitem id="menu_manager_student"
+	name="Students"
+	parent="action_manager_student"
+	action="manager_menu"
+	/>
+</odoo>

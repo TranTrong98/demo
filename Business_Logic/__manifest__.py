@@ -1,0 +1,17 @@
+{'name': 'Sale Business',
+ 'description': 'Change stage for Sale Order',
+ 'author': 'Tran Trong - TMT',
+ 'category': 'Uncategorized',
+ 'version': '12.0.1',
+ 'depends': ['sale', 'account', 'mail'],
+ 'data': [
+    #'security/ir.model.access.csv',
+    'views/salebus.xml',
+    #'data/library_checkout_stage.xml',
+    'wizard/checkout_mass_message_wizard.xml',
+ ],
+ 'license': 'AGPL-3',
+ 'installable': True,
+ 'application': True,
+ 'auto_install': False,
+} 
